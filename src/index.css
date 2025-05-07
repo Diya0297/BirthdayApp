@@ -1,0 +1,465 @@
+
+
+body{
+ 
+background-color: black;
+
+  
+  
+}
+
+
+
+.container{
+ 
+  height:auto;
+  width:95%;
+  margin: auto;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(150px, 1fr));
+  grid-auto-rows: 120px;
+  grid-gap: 8px;
+  grid-auto-flow: dense;
+}
+
+
+.japanese-text{
+  font-family: 'Noto Sans JP', sans-serif;
+  color: black;
+
+}
+
+.Box-1{
+  grid-column: span 4;
+  border-radius: 10px;
+  background-image: linear-gradient(#ff8fa3, #ff4d6d);
+  font-family: 'Rubik Spray Paint', 'Noto Sans JP', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ffc6ff;
+  
+}
+
+.bday-title{
+  margin: 0;
+  padding: 0;
+  font-size: 3rem;
+  color: black;
+  text-shadow:
+    -1px -1px 0 white,
+     1px -1px 0 white,
+    -1px  1px 0 white,
+     1px  1px 0 white;
+  
+}
+.Box-1, p{
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+}
+.sakura-gif{
+  width: 130px;
+  height: 100px;
+  border: 1px solid pink;
+}
+
+.inner-container{
+  display: flex;
+  gap: 8px;
+}
+
+.Box-2{
+  background-image: url("https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWR4ZDhjMGdpNXoxN3lyNThpNWpsb2tyZmEwNGl5empuZzcxbjdvcyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jQQRWxSlW1tWvWigA9/giphy.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-row: span 3;
+  border-radius: 10px;
+  background-color: #ffd6a5;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 20px;
+  font-family: "Press Start 2P", system-ui
+}
+
+.todo-study-gif{
+  border: 2px solid green;
+  height: 300px;
+  width: 300px;
+  
+}
+.todo-list{
+  background-image: linear-gradient(#ffc599, #da7e37);
+  padding: 10px;
+  margin: 5px;
+}
+.todo-list li{
+  font-size: 11px;
+  background-image: linear-gradient(#ffc599, #da7e37);
+  list-style: none;
+  margin: 5px;
+  padding: 5px;
+  text-align: start;
+  border: 2px solid black;
+  text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+}
+
+.box2-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.box2-container, h1{
+  color: white;
+  font-weight: bolder;
+  text-shadow:
+  -1px -1px 0 black,
+  1px -1px 0 black,
+ -1px  1px 0 black,
+  1px  1px 0 black;
+ 
+}
+
+
+
+
+.Box-3{
+  grid-column: span 3;
+  grid-row:span 3;
+  border-radius: 10px;
+  background-image: linear-gradient(#f5b82e, #ffee70);
+  color: white;
+  font-size: 2rem;
+ 
+  text-align: center;
+  padding-top: 20px;
+}
+.music-gif{
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+  border: 2px solid #fdffb6;
+}
+.box3-container{
+  display: flex;
+  gap: 10px;
+}
+.box3-container div{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.box3-container div h1{
+  margin: 0;
+  padding: 0;
+}
+
+.box3-container div h2{
+  margin: 0;
+  padding: 0;
+  text-align: start;
+}
+
+.box3-list-container{
+  background-image: linear-gradient(#ca6702, #eda268) ;
+  width: 320px;
+  height: 320px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  font-family: "Sour Gummy", sans-serif;
+}
+
+.box3-list{
+  width: 300px;
+  height: 100px;
+  color: black;
+  list-style: none;
+  border: 1px solid black;
+  align-items: start;
+  display: flex;
+  gap: 8px;
+  margin: 5px;
+  background-image: linear-gradient(#ca6702, #eda268) ;
+}
+
+.box3-list img{
+  width: 90px;
+  height: 90px;
+  margin: 5px;
+  border: 1px solid black;
+  
+}
+
+.music-content{
+  text-align: start;
+}
+
+.box3-list h2{
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+}
+
+.box3-list p{
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+.box3-container{
+  display: flex;
+}
+
+.add-song-container{
+  background-image: linear-gradient(#ca6702, #eda268) ;
+  width: 500px;
+  height: 335px;
+  margin-top: 10px;
+  border: 1px solid black;
+}
+
+.square-move {
+  position: relative;
+  animation: moveSquare 4s linear infinite;
+  width: 150px;
+  height: 70px;
+  font-size: 2rem;
+  font-family: "Sour Gummy", sans-serif;
+  border-radius: 10px;
+  border: 3px solid #ae2012;
+  background-color: #e9d8a6;
+  margin-right: 100px;
+}
+
+
+@keyframes moveSquare {
+  0%   { transform: translate(0, 0); }
+  25%  { transform: translate(100px, 0); }
+  50%  { transform: translate(100px, 100px); }
+  75%  { transform: translate(0, 100px); }
+  100% { transform: translate(0, 0); }
+}
+
+
+.Box-4{
+  grid-row:span 2;
+  border-radius: 10px;
+  background-image: linear-gradient(#b7efc5, #2dc653);
+  color: white;
+  font-size: 2rem;
+  font-family: "Pacifico", cursive;
+  text-align: center;
+  padding-top: 20px;
+  
+}
+
+.cake-title{
+  margin: 0;
+  padding: 0;
+  font-size: 3rem;
+  color: #ffadad;
+}
+
+.cake-flip-container p{
+  color:#ae2012;
+  font-size: 16px;
+  background-color: #bdb2ff;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 5px;
+  border: 2px solid black;
+
+}
+.cake-flip-container img{
+  width: 80%;
+  height: 200px;
+  margin: 0;
+  padding: 0;
+  
+}
+.cake-img-container{
+  background-color: #bdb2ff;
+  width: 80%;
+  height: 185px;
+  margin: auto;
+  border: 2px solid black;
+  
+}
+
+
+
+.Box-5{
+  grid-row: span 3;
+  border-radius: 10px;
+  background-image: linear-gradient(#e8f3fe, #4b9cf9);
+  color: white;
+  font-size: 2rem;
+  font-family: "Sour Gummy", sans-serif;
+  text-align: center;
+  padding-top: 20px;
+}
+.wishes-container-off{
+  background-image: linear-gradient(#ffc599, #da7e37);
+  width: 92%;
+  margin: auto;
+  border: 1px solid black;
+}
+.wishes-container-off h4{
+  margin: 0;
+  padding: 0;
+  font-size: medium;
+  color: black;
+}
+
+.wishes-container-on{
+  background: url("https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMjhqMHlya3A4Nm44amlvZWZ6ZXZ0eXdybTZhYXk0bzZoczRucXcxZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IIJR3vXTJYlG3c5UmJ/giphy.gif");
+  background-color: #ee9b00;
+  width: 92%;
+  height: 340px;
+  margin: auto;
+  border: 1px solid black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+  font-weight: bolder;
+  opacity: 85%;
+}
+
+.wishes-container-on p{
+  height: 100px;
+  margin: 10px;
+  text-align: center;
+  font-weight: bolder;
+  text-shadow:
+  -1px -1px 0 white,
+  1px -1px 0 white,
+ -1px  1px 0 white,
+  1px  1px 0 white;
+}
+.get-wish-btn{
+  height: 50px;
+  width: 100px;
+  margin: 20px;
+  border: 1px solid grey;
+  background-image: linear-gradient(#9bf6ff, #4382e7);
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: "Sour Gummy", sans-serif;
+  
+}
+
+
+
+
+
+.Box-6{
+  grid-column: span 2;
+  grid-row: span 2;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  font-size: 2rem;
+ 
+  text-align: center;
+  padding-top: 20px;
+}
+.cat-image{
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  
+}
+.Box-7{
+  grid-row: span 3;
+  grid-column: span 2;
+  border-radius: 10px;
+  background-image: linear-gradient(#dc97ff, #ffc6ff) ;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 20px;
+  
+  
+}
+.box-7-container-off{
+  margin: 0;
+  padding: 0;
+  width: 95%;
+  height:350px;
+  margin: auto;
+  border: 1px solid #4382e7;
+  background-image: url("https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYnNlbHE1OWw4c210NHY1dzgwMWRkbXo3MnhuYWFuaWcyZWU1amludiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/sr9VDW732xLby/giphy.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.box-7-container-off h2{
+  color: black;
+  font-size:25px;
+  text-shadow:
+  -1px -1px 0 white,
+  1px -1px 0 white,
+ -1px  1px 0 white,
+  1px  1px 0 white;
+}
+
+.FoodImages-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row: repeat(2, 100px);
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.food-images{
+  width: 160px;
+  align-self: center;
+  background-color: #ca6702;
+  margin: 5px;
+  margin-left: 25px;
+  border: 2px solid white;
+
+}
+
+.Box-8{
+  grid-row: span 3;
+  border-radius: 10px;
+  background-image: linear-gradient(white, black);
+  color: white;
+  font-size: 2rem;
+  
+  text-align: center;
+  padding-top: 20px;
+}
+.animation-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ramen-animation{
+  width: 400px;
+  margin: 0;
+  padding: 0;
+  
+}
+
+
+
+
+
+
+
+ 
